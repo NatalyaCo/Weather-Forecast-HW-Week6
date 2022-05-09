@@ -8,20 +8,61 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
  
 </head>
+
+
 <body>
   <div class="hero">
     <div class="hero-text">
         <h1 style="font-size:50px">Weather Search</h1>
         
-      </div>
+    </div>
 </div>
  
-  <div class="row">
+<div class="row">
       <div class="card col-3 search">
           <div class="card-body searchBody">
-              <h2>Enter a City to Search Weather:</h2>
-              <input class="inputArea searchInput">
-              <button class="btn button btn-primary searchButton" type="submit">Search</button>
-              <div class="searchHistory"></div>
-          </div>
-      </div>
+            <h2>Enter a City to Search Weather:</h2>
+            <input class="inputArea searchInput">
+            <button class="btn button btn-primary searchButton" type="submit">Search</button>
+            <div class="searchHistory"></div>
+        </div>
+</div>
+
+<div class="col-9">
+    <div class="card-body currentWeather">
+        <h2 class="card-title bolder" id="city"></h2>
+        <p class="temp"></p>
+        <p class="wind"></p>
+        <p class="humidity"></p>
+    <div class="uv">
+        <p class="uvHeader inline"></p>
+        <p id="uvIndex"></p>
+    </div>
+
+    </div>
+       
+<h2 class="bolder">Weather for Next 5 Days</h3>
+    <div class="card-deck">
+        <div class="card col cardColor">
+                <ul id="5"></ul>
+        </div>
+    <div class="card col cardColor">
+            <ul id="1"></ul>
+    </div>
+    <div class="card col cardColor">
+            <ul id="2"></ul>
+    </div>
+            
+    <div class="card col cardColor">
+            <ul id="3"></ul>
+    </div>
+            
+    <div class="card col cardColor">
+            <ul id="4"></ul>
+    </div>
+    </div>
+</div>      
+
+</body>
+    
+</html>      
