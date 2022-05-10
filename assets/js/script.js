@@ -14,7 +14,9 @@ $.ajax({
       
 var currentDate = moment().format("M/DD/YYYY");
     $("#city").text(response.city.name + " " + currentDate);
-        
+for (i = 5; i < response.list.length; i += 8) { 
+
+var j = i.toString();        
 
 var dateEl = $("<li>");
     dateEl.text(moment(response.list[i].dt_txt).format('M/D/YYYY')); 
@@ -40,7 +42,7 @@ var iconUrl = `http://openweathermap.org/img/wn/${iconCode}@2x.png`;
         $("#" + j).append(windEl);
         $("#" + j).append(humidityEl);
     }
-}
+})
    
 
 .catch (function (error) {
