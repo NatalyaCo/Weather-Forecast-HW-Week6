@@ -48,3 +48,5 @@ var iconUrl = `http://openweathermap.org/img/wn/${iconCode}@2x.png`;
 .catch (function (error) {
     console.log(error.responseJSON.cod, error.responseJSON.message);
  })
+
+ 
