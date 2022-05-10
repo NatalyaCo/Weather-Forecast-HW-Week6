@@ -49,4 +49,35 @@ var iconUrl = `http://openweathermap.org/img/wn/${iconCode}@2x.png`;
     console.log(error.responseJSON.cod, error.responseJSON.message);
  })
 
- 
+ $.ajax({
+    url: currentWeather,
+    method: 'GET',
+})
+
+.then(function (response) {
+    
+var temp = response.main.temp;
+var wind = response.wind.speed;
+var humidity = response.main.humidity;
+    
+console.log(temp, wind, humidity);
+   
+$(".temp").text("Temperature: " + temp + String.fromCharCode(176) + "F");
+    
+$(".wind").text("Wind: " + wind + " MPH");
+    
+$(".humidity").text("Humditiy: " + humidity + "%");
+    
+var dayIconCode = response.weather[0].icon;
+var dayIconUrl = `http://openweathermap.org/img/wn/${dayIconCode}@2x.png`;
+var img = $("<img>");
+img.attr("src", dayIconUrl);
+
+var latitude = response.coord.lat;
+   
+console.log(latitude);
+    
+var longitude = response.coord.lon;
+    
+var oneCall = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=mintutely,hourly,daily,alerts&appid=537c5082f054c67490bdd35711142b24`;
+    
