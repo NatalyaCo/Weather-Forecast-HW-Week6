@@ -80,4 +80,8 @@ console.log(latitude);
 var longitude = response.coord.lon;
     
 var oneCall = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=mintutely,hourly,daily,alerts&appid=537c5082f054c67490bdd35711142b24`;
-    
+
+}).catch(function (error) {
+    console.log(error.responseJSON.cod, error.responseJSON.message);
+})
+}    
