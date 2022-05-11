@@ -8,7 +8,7 @@ header {
 }
 
 .hero {
-    height: 800px;
+    height: 500px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("/assets/weather.png");
@@ -23,7 +23,6 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
     color: rgb(31, 19, 2);
   }
 
@@ -32,7 +31,120 @@ h1 {
     font-weight: bolder;
 }
 
-h2 {
+h2, h3 {
     font-size: 35px;
     font-weight: bold;
+}
+input {
+    border-radius: 5px;
+}
+
+img {
+    max-width: 75px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    font-size: 25px;
+    padding: 5px 5px 10px 5px;
+
+}
+
+p {
+    font-size: 25px;
+}
+
+.search {
+    min-height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cardColor {
+    background-color: rgb(33, 160, 192);
+    color: rgb(241, 241, 211);
+}
+
+.currentWeather {
+    min-height: 30px;
+    border: 3px solid;
+    border-radius: 7px;
+}
+
+.inputArea {
+    width: 100%;
+}
+
+.searchBody {
+    padding: 5px;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+.safe {
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    background-color: green;
+    display: inline;
+}
+
+.orange {
+    background-color: orangered;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    display: inline;
+}
+
+.warning {
+    background-color: yellow;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+    display: inline;
+}
+
+.danger {
+    background-color: red;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    display: inline;
+}
+
+.button {
+    border-radius: 5px;
+    display: block;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.searchButton {
+    margin-bottom: 10px;
+}
+
+.historyBtn {
+    background-color: grey;
+    margin-top: 20px;
+    border-color: grey;
+}
+
+.searchHistory {
+    border-top: 2px solid;
+    border-color: grey;
 }
